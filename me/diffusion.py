@@ -11,10 +11,11 @@ import json
 from typing import List, Optional
 from pydantic import BaseModel, ConfigDict, Field
 from dotenv import load_dotenv, find_dotenv
-import nest_asyncio
-
-# Apply nest_asyncio to allow nested event loops in notebook/interactive execution
-nest_asyncio.apply()
+try:
+    import nest_asyncio
+    nest_asyncio.apply()
+except ImportError:
+    pass
 
 # Load environment variables
 load_dotenv(find_dotenv(), override=True)

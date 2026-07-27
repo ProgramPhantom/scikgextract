@@ -14,7 +14,7 @@ maintainers = [
     {name = "Sameer Sadruddin", email = "sameer.sadruddin@tib.eu"}
 ]
 dependencies = [
-    "langgraph>=1.0.1",
+    "langgraph>=0.2.0",
     "langchain-core>=0.3.74",
     "langchain-openai>=0.3.30",
     "pydantic>=2.9.2",
@@ -38,7 +38,8 @@ dependencies = [
     "scikit-learn>=1.5.0",
     "sentence-transformers>=3.0.0",
     "orkg>=0.1.0",
-    "yescieval"
+    "yescieval",
+    "nest-asyncio"
 ]
 requires-python = ">=3.12"
 readme = "README.md"
